@@ -127,7 +127,7 @@
     }
 
     @include mediaTablet {
-      font-size: 40px;
+      font-size: 36px;
     }
   }
 
@@ -139,7 +139,7 @@
     margin-bottom: 61px;
     @include mediaTablet {
       margin-bottom: 32px;
-      font-size: 18px;
+      font-size: 16px;
 
       max-width: 420px;
     }
