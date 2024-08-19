@@ -1,0 +1,28 @@
+@mixin mediaTablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin btnAction {
+  border: 1px solid $white;
+  border-radius: 4px;
+  padding: 0px 38px;
+  width: 278px;
+  height: 52px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 325%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  transition: all 0.2s ease-in;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $white;
+    color: $dark;
+  }
+}
