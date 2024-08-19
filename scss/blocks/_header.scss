@@ -6,6 +6,8 @@
     justify-content: space-between;
     align-items: center;
     background-color: $white;
+    height: 60vh;
+    transition: all 0.1s ease-in-out;
   }
   @media screen and (max-width: 1199px) {
     &__info {
@@ -69,7 +71,6 @@
     &-text-wrap {
       flex-direction: row;
       margin-left: 15px;
-      
     }
     &-title {
       margin: 0;

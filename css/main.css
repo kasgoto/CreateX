@@ -166,6 +166,14 @@ a:hover {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    -webkit-transition-property: height, visibility;
+    transition-property: height, visibility;
+    -webkit-transition-duration: 0.35s;
+            transition-duration: 0.35s;
+  }
+}
 .header {
   min-height: 1080px;
 }
@@ -180,6 +188,9 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fff;
+  height: 60vh;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 @media screen and (max-width: 1199px) {
   .header__info {
