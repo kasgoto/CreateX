@@ -422,7 +422,7 @@ a:hover {
 }
 @media screen and (max-width: 959px) {
   .carousel__title {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 .carousel__description {
