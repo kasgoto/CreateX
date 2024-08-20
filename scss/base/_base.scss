@@ -59,6 +59,22 @@ a {
   }
 }
 
+.title-4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: $dark;
+
+  @include mediaTablet {
+    font-size: 18px;
+  }
+}
+
+.description {
+  color: #787a80;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .collapsing {
     transition-property: height, visibility;

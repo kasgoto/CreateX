@@ -190,15 +190,20 @@
     }
   }
 
-  &__control-prev-icon {
-    background-image: url("../img/homepage/main/carousel/slide-btn-back.svg");
+  &__control-icon {
     width: 48px;
     height: 48px;
+    border-radius: 50%;
+    &:hover {
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__control-prev-icon {
+    background-image: url("../img/homepage/main/carousel/slide-btn-back.svg");
   }
 
   &__control-next-icon {
     background-image: url("../img/homepage/main/carousel/slide-btn.svg");
-    width: 48px;
-    height: 48px;
   }
 }
