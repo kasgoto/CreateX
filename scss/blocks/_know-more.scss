@@ -1,7 +1,7 @@
 .know-more {
   margin-bottom: 120px;
   @include mediaTablet {
-     margin-bottom: 0;
+    margin-bottom: 0;
   }
   &__form-wrapper {
     background-color: $white;
