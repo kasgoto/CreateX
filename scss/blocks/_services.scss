@@ -10,13 +10,13 @@
   &::before {
     content: "";
     position: absolute;
-    left: 0px;
-    top: 166px;
+    left: 0;
     width: 100%;
     min-height: 850px;
     background-color: $gray200;
     background-image: url("../img/homepage/main/our-services/bg-image.png");
     z-index: -10;
+    transform: translate(0, -197px);
     @include mediaTablet {
       background-image: url("../img/homepage/main/our-services/bg-image.png");
       top: 0;

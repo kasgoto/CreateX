@@ -990,13 +990,14 @@ a:hover {
 .services::before {
   content: "";
   position: absolute;
-  left: 0px;
-  top: 166px;
+  left: 0;
   width: 100%;
   min-height: 850px;
   background-color: #f4f5f6;
   background-image: url("../img/homepage/main/our-services/bg-image.png");
   z-index: -10;
+  -webkit-transform: translate(0, -197px);
+          transform: translate(0, -197px);
 }
 @media screen and (max-width: 959px) {
   .services::before {
