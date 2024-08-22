@@ -209,6 +209,11 @@ a:hover {
   min-height: 1080px;
   margin-bottom: 180px;
 }
+@media screen and (max-width: 959px) {
+  .header {
+    margin-bottom: 60px !important;
+  }
+}
 .header__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -611,6 +616,11 @@ a:hover {
   text-align: center;
   overflow-x: hidden;
 }
+@media screen and (max-width: 959px) {
+  .video {
+    margin-bottom: 80px;
+  }
+}
 .video__title {
   margin-bottom: 24px;
 }
@@ -785,6 +795,11 @@ a:hover {
   text-align: center;
   margin-bottom: 120px;
 }
+@media screen and (max-width: 959px) {
+  .values {
+    margin-bottom: 20px;
+  }
+}
 .values__title {
   line-height: 130%;
   margin-bottom: 24px;
@@ -794,6 +809,11 @@ a:hover {
   line-height: 150%;
   text-align: center;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 959px) {
+  .values__description {
+    padding: 0 35px;
+  }
 }
 .values__wrapper {
   display: -webkit-box;
@@ -984,7 +1004,7 @@ a:hover {
 @media screen and (max-width: 959px) {
   .services {
     position: relative;
-    padding-top: 120px;
+    padding-top: 80px;
   }
 }
 .services::before {
@@ -1001,6 +1021,8 @@ a:hover {
 }
 @media screen and (max-width: 959px) {
   .services::before {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
     background-image: url("../img/homepage/main/our-services/bg-image.png");
     top: 0;
     height: 100%;

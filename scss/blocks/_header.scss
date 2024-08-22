@@ -1,6 +1,9 @@
 .header {
   min-height: 1080px;
   margin-bottom: 180px;
+  @include mediaTablet {
+    margin-bottom: 60px !important;
+  }
 
   &__info {
     display: flex;
