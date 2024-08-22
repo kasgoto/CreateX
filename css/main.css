@@ -995,12 +995,12 @@ a:hover {
   width: 100%;
   min-height: 850px;
   background-color: #f4f5f6;
-  background-image: url("../../img/homepage/main/our-services/bg-image.png");
+  background-image: url("../img/homepage/main/our-services/bg-image.png");
   z-index: -10;
 }
 @media screen and (max-width: 959px) {
   .services::before {
-    background-image: url("../../img/homepage/main/our-services/bg-image.png");
+    background-image: url("../img/homepage/main/our-services/bg-image.png");
     top: 0;
     height: 100%;
     width: 100%;
@@ -1045,6 +1045,14 @@ a:hover {
           box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
   background: #fff;
 }
+.services__card .services__card-wrap:hover {
+  -webkit-box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05), 0 12px 10px -6px rgba(30, 33, 44, 0.08), 0 26px 24px -10px rgba(30, 33, 44, 0.1), 0 60px 80px -20px rgba(30, 33, 44, 0.16);
+          box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05), 0 12px 10px -6px rgba(30, 33, 44, 0.08), 0 26px 24px -10px rgba(30, 33, 44, 0.1), 0 60px 80px -20px rgba(30, 33, 44, 0.16);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in;
+  transition: -webkit-box-shadow 0.3s ease-in;
+  transition: box-shadow 0.3s ease-in;
+  transition: box-shadow 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
+}
 .services__card-wrap {
   z-index: 2;
   position: absolute;
@@ -1074,17 +1082,17 @@ a:hover {
   background-size: contain;
 }
 .services__card-wrap--1::after {
-  background: url("../../img/homepage/main/our-services/hover/construction.jpg") center center;
+  background: url("../img/homepage/main/our-services/hover/construction.jpg") center center;
 }
 .services__card-wrap--2::after {
-  background: url("../../img/homepage/main/our-services/hover/project.jpg");
+  background: url("../img/homepage/main/our-services/hover/project.jpg");
 }
 .services__card-wrap--3::after {
-  background: url("../../img/homepage/main/our-services/hover/interior.jpg");
+  background: url("../img/homepage/main/our-services/hover/interior.jpg");
   background-position: center;
 }
 .services__card-wrap--4::after {
-  background: url("../../img/homepage/main/our-services/hover/repairs.jpg");
+  background: url("../img/homepage/main/our-services/hover/repairs.jpg");
   background-position: 70%;
 }
 .services__card-wrap:hover::after {
@@ -1120,20 +1128,20 @@ a:hover {
   transition: background-color 0.3s ease-in;
 }
 .services__card-img--1 {
-  -webkit-mask: url("../../img/homepage/main/our-services/ic-construction.svg") no-repeat;
-  mask: url("../../img/homepage/main/our-services/ic-construction.svg") no-repeat;
+  -webkit-mask: url("../img/homepage/main/our-services/ic-construction.svg") no-repeat;
+  mask: url("../img/homepage/main/our-services/ic-construction.svg") no-repeat;
 }
 .services__card-img--2 {
-  -webkit-mask: url("../../img/homepage/main/our-services/ic-plan.svg") no-repeat;
-  mask: url("../../img/homepage/main/our-services/ic-plan.svg") no-repeat;
+  -webkit-mask: url("../img/homepage/main/our-services/ic-plan.svg") no-repeat;
+  mask: url("../img/homepage/main/our-services/ic-plan.svg") no-repeat;
 }
 .services__card-img--3 {
-  -webkit-mask: url("../../img/homepage/main/our-services/ic-pantone.svg") no-repeat;
-  mask: url("../../img/homepage/main/our-services/ic-pantone.svg") no-repeat;
+  -webkit-mask: url("../img/homepage/main/our-services/ic-pantone.svg") no-repeat;
+  mask: url("../img/homepage/main/our-services/ic-pantone.svg") no-repeat;
 }
 .services__card-img--4 {
-  -webkit-mask: url("../../img/homepage/main/our-services/ic-painting.svg") no-repeat;
-  mask: url("../../img/homepage/main/our-services/ic-painting.svg") no-repeat;
+  -webkit-mask: url("../img/homepage/main/our-services/ic-painting.svg") no-repeat;
+  mask: url("../img/homepage/main/our-services/ic-painting.svg") no-repeat;
 }
 .services__card-title {
   z-index: 9;
@@ -1200,6 +1208,9 @@ a:hover {
 .services__learn-more-btn:hover {
   background-color: #fff;
   color: #1e212c;
+}
+.services__learn-more-btn:hover {
+  border: 1px solid #9a9ca5;
 }
 @media screen and (max-width: 959px) {
   .services__learn-more-btn {

@@ -15,10 +15,10 @@
     width: 100%;
     min-height: 850px;
     background-color: $gray200;
-    background-image: url("../../img/homepage/main/our-services/bg-image.png");
+    background-image: url("../img/homepage/main/our-services/bg-image.png");
     z-index: -10;
     @include mediaTablet {
-      background-image: url("../../img/homepage/main/our-services/bg-image.png");
+      background-image: url("../img/homepage/main/our-services/bg-image.png");
       top: 0;
       height: 100%;
       width: 100%;
@@ -60,6 +60,14 @@
       0 30px 24px -10px rgba(154, 156, 165, 0.05),
       0 80px 80px -20px rgba(154, 156, 165, 0.08);
     background: $white;
+
+    & .services__card-wrap:hover {
+      box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05),
+        0 12px 10px -6px rgba(30, 33, 44, 0.08),
+        0 26px 24px -10px rgba(30, 33, 44, 0.1),
+        0 60px 80px -20px rgba(30, 33, 44, 0.16);
+      transition: box-shadow 0.3s ease-in;
+    }
   }
 
   &__card-wrap {
@@ -91,18 +99,18 @@
       background-size: contain;
     }
     &--1::after {
-      background: url("../../img/homepage/main/our-services/hover/construction.jpg")
+      background: url("../img/homepage/main/our-services/hover/construction.jpg")
         center center;
     }
     &--2::after {
-      background: url("../../img/homepage/main/our-services/hover/project.jpg");
+      background: url("../img/homepage/main/our-services/hover/project.jpg");
     }
     &--3::after {
-      background: url("../../img/homepage/main/our-services/hover/interior.jpg");
+      background: url("../img/homepage/main/our-services/hover/interior.jpg");
       background-position: center;
     }
     &--4::after {
-      background: url("../../img/homepage/main/our-services/hover/repairs.jpg");
+      background: url("../img/homepage/main/our-services/hover/repairs.jpg");
       background-position: 70%;
     }
     &:hover::after {
@@ -138,18 +146,16 @@
     height: 53px;
 
     &--1 {
-      @include maskBg(
-        "../../img/homepage/main/our-services/ic-construction.svg"
-      );
+      @include maskBg("../img/homepage/main/our-services/ic-construction.svg");
     }
     &--2 {
-      @include maskBg("../../img/homepage/main/our-services/ic-plan.svg");
+      @include maskBg("../img/homepage/main/our-services/ic-plan.svg");
     }
     &--3 {
-      @include maskBg("../../img/homepage/main/our-services/ic-pantone.svg");
+      @include maskBg("../img/homepage/main/our-services/ic-pantone.svg");
     }
     &--4 {
-      @include maskBg("../../img/homepage/main/our-services/ic-painting.svg");
+      @include maskBg("../img/homepage/main/our-services/ic-painting.svg");
     }
     background-color: $accent;
     transition: background-color 0.3s ease-in;
@@ -190,6 +196,9 @@
     font-size: 16px;
     line-height: 325%;
     letter-spacing: 0.03em;
+    &:hover {
+      border: 1px solid $gray600;
+    }
     @include mediaTablet {
       font-size: 14px;
       width: 160px;
