@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header class="header none1">
+    <header class="header none">
       <div class="header__top">
         <div class="header__top-row">
           <nav class="header__nav nav navbar navbar-expand-xl">
@@ -296,7 +296,7 @@
     </header>
 
     <main>
-      <section class="video none1">
+      <section class="video none">
         <div class="container">
           <h2 class="video__title title-2">
             We are Createx Construction Bureau
@@ -319,7 +319,7 @@
         </div>
       </section>
 
-      <section class="values">
+      <section class="values none">
         <div class="container">
           <h2 class="values__title title-2">Our values</h2>
           <p class="values__description description">
@@ -372,7 +372,94 @@
           </div>
         </div>
       </section>
+
+      <section class="know-more">
+        <div class="know-more__form-wrapper container">
+          <h2 class="know-more__title title-3">
+            Want to know more? Ask us a question:
+          </h2>
+          <form action="" class="know-more__form form">
+            <div class="form__input-item">
+              <p class="know-more__input-title form__input-title description">
+                Name
+              </p>
+              <input type="text" class="form__input" placeholder="Your name" />
+            </div>
+            <div class="form__input-item">
+              <p class="know-more__input-title form__input-title description">
+                Phone
+              </p>
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Your phone"
+                data-tel-input
+              />
+            </div>
+            <div class="form__input-item">
+              <p class="know-more__input-title form__input-title description">
+                Message
+              </p>
+              <input
+                type="text"
+                class="form__input form__input--lg"
+                placeholder="Your message"
+              />
+            </div>
+            <button type="submit" class="form__button">Send</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container">
+          <h2 class="services__title title-2">Our services</h2>
+          <p class="services__description description">
+            Createx Construction Bureau is a construction giant with a full
+            range of construction services.
+          </p>
+          <div class="services__cards">
+            <div class="services__card">
+              <div class="services__card-wrap services__card-wrap--1">
+                <span class="services__card-img services__card-img--1"></span>
+                <h4 class="services__card-title title-4">Construction</h4>
+              </div>
+            </div>
+            <div class="services__card">
+              <div class="services__card-wrap services__card-wrap--2">
+                <span class="services__card-img services__card-img--2"></span>
+                <h4 class="services__card-title title-4">
+                  Project Development
+                </h4>
+              </div>
+            </div>
+            <div class="services__card">
+              <div class="services__card-wrap services__card-wrap--3">
+                <span class="services__card-img services__card-img--3"></span>
+                <h4 class="services__card-title title-4">Interior Design</h4>
+              </div>
+            </div>
+            <div class="services__card">
+              <div class="services__card-wrap services__card-wrap--4">
+                <span class="services__card-img services__card-img--4"></span>
+                <h4 class="services__card-title title-4">Repairs</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="services__learn-more">
+            <h3 class="services__learn-more-title title-3">
+              Learn more about our services
+            </h3>
+            <button class="services__learn-more-btn">view services</button>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <script src="./libs/phoneMask/mask.js"></script>
+    <script src="./libs/phoneMask/mask_list.js"></script>
+
     <script src="node_modules/video.js/dist/video.min.js"></script>
     <script src="node_modules/videojs-youtube/dist/Youtube.min.js"></script>
     <script

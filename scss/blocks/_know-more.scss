@@ -1,0 +1,33 @@
+.know-more {
+  margin-bottom: 120px;
+  @include mediaTablet {
+     margin-bottom: 0;
+  }
+  &__form-wrapper {
+    background-color: $white;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03),
+      0 12px 10px -6px rgba(154, 156, 165, 0.04),
+      0 30px 24px -10px rgba(154, 156, 165, 0.05),
+      0 80px 80px -20px rgba(154, 156, 165, 0.08);
+    padding: 60px 48px;
+    height: 243px;
+    @include mediaTablet {
+      height: fit-content;
+    }
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 3fr 3fr 5fr 1fr;
+    gap: 24px;
+
+    @include mediaTablet {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,0 +1,199 @@
+.services {
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  @include mediaTablet {
+    position: relative;
+    padding-top: 120px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 166px;
+    width: 100%;
+    min-height: 850px;
+    background-color: $gray200;
+    background-image: url("../../img/homepage/main/our-services/bg-image.png");
+    z-index: -10;
+    @include mediaTablet {
+      background-image: url("../../img/homepage/main/our-services/bg-image.png");
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+    }
+  }
+
+  &__title {
+    line-height: 130%;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 60px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-gap: 30px;
+    @include mediaTablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    margin-bottom: 80px;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $gray300;
+    border-radius: 4px;
+    width: 100%;
+    height: 285px;
+    box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03),
+      0 12px 10px -6px rgba(154, 156, 165, 0.04),
+      0 30px 24px -10px rgba(154, 156, 165, 0.05),
+      0 80px 80px -20px rgba(154, 156, 165, 0.08);
+    background: $white;
+  }
+
+  &__card-wrap {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-color: $white;
+
+    &:hover .services__card-img {
+      background-color: $white;
+    }
+    &:hover .services__card-title {
+      color: $white;
+    }
+    &::after {
+      z-index: -2;
+      content: "";
+      position: absolute;
+
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      transition: opacity 0.3s ease-in-out;
+      opacity: 0;
+      background-size: contain;
+    }
+    &--1::after {
+      background: url("../../img/homepage/main/our-services/hover/construction.jpg")
+        center center;
+    }
+    &--2::after {
+      background: url("../../img/homepage/main/our-services/hover/project.jpg");
+    }
+    &--3::after {
+      background: url("../../img/homepage/main/our-services/hover/interior.jpg");
+      background-position: center;
+    }
+    &--4::after {
+      background: url("../../img/homepage/main/our-services/hover/repairs.jpg");
+      background-position: 70%;
+    }
+    &:hover::after {
+      opacity: 1;
+    }
+    &::before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+
+      opacity: 0.6;
+      border-radius: 4px;
+      background: transparent;
+      transition: background-color 0.3s ease-in;
+    }
+    &:hover::before {
+      background-color: $gray900;
+    }
+  }
+
+  &__card-img {
+    content: "";
+
+    position: absolute;
+    left: calc(50% - 53px / 2);
+    top: 30%;
+    background-repeat: no-repeat;
+    width: 53px;
+    height: 53px;
+
+    &--1 {
+      @include maskBg(
+        "../../img/homepage/main/our-services/ic-construction.svg"
+      );
+    }
+    &--2 {
+      @include maskBg("../../img/homepage/main/our-services/ic-plan.svg");
+    }
+    &--3 {
+      @include maskBg("../../img/homepage/main/our-services/ic-pantone.svg");
+    }
+    &--4 {
+      @include maskBg("../../img/homepage/main/our-services/ic-painting.svg");
+    }
+    background-color: $accent;
+    transition: background-color 0.3s ease-in;
+  }
+
+  &__card-title {
+    z-index: 9;
+    margin-top: 165px;
+    padding: 0 20px;
+    transition: color 0.3s ease-in;
+  }
+
+  &__learn-more {
+    display: flex;
+    vertical-align: middle;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 80px;
+    gap: 40px;
+    @include mediaTablet {
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+  }
+
+  &__learn-more-title {
+    margin-bottom: 0;
+    padding-top: 5px;
+  }
+
+  &__learn-more-btn {
+    @include btnAction;
+    padding: 0px 39px;
+    width: 207px;
+    height: 52px;
+    background: $accent;
+    font-size: 16px;
+    line-height: 325%;
+    letter-spacing: 0.03em;
+    @include mediaTablet {
+      font-size: 14px;
+      width: 160px;
+      padding: 0px 20px;
+    }
+  }
+}

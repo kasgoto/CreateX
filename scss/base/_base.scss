@@ -59,6 +59,19 @@ a {
   }
 }
 
+.title-3 {
+  color: $dark;
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  text-align: center;
+  
+  @include mediaTablet {
+    font-size: 20px;
+  }
+}
+
 .title-4 {
   font-weight: 700;
   font-size: 20px;
