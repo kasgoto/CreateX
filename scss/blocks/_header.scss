@@ -1,5 +1,5 @@
 .header {
-  min-height: 1080px;
+  max-height: 1080px;
   margin-bottom: 180px;
   @include mediaTablet {
     margin-bottom: 60px !important;
@@ -10,17 +10,22 @@
     justify-content: space-between;
     align-items: center;
     background-color: $white;
-    min-height: 350px;
-    height: 70vh;
+    height: 400px;
     transition-delay: 0s;
-    transition: all 0.1s ease;
+    transition: all 0.1s ease, opacity 0.15s ease;
     box-shadow: 30px rgba(0, 0, 0, 0.491);
   }
   @media screen and (max-width: 1199px) {
-    min-height: 800px;
-    margin-bottom: 150px;
     &__info {
+      margin-top: 20px;
       padding: 25px;
+      &:not(.show) {
+        opacity: 0;
+        transition: opacity 0.1s ease;
+      }
+      & .show {
+        opacity: 1;
+      }
     }
   }
 
@@ -32,6 +37,7 @@
 
   &__top-row {
     padding: 20px 0;
+    background-color: $white;
   }
 
   &__nav {

@@ -2,9 +2,11 @@
   align-items: center;
   text-align: center;
   overflow: hidden;
+  margin-bottom: 120px;
   @include mediaTablet {
     position: relative;
     padding-top: 80px;
+    margin-bottom: 60px;
   }
 
   &::before {
