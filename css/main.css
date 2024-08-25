@@ -1348,19 +1348,19 @@ a:hover {
   padding: 0;
 }
 .portfolio__card-group .projects-card__card-img--1 {
-  background-image: url("../../img/homepage/main/selected-projects/building1.jpg");
+  background-image: url("../img/homepage/main/selected-projects/building1.jpg");
 }
 .portfolio__card-group .projects-card__card-img--2 {
-  background-image: url("../../img/homepage/main/selected-projects/building2.png");
+  background-image: url("../img/homepage/main/selected-projects/building2.png");
 }
 .portfolio__card-group .projects-card__card-img--3 {
-  background-image: url("../../img/homepage/main/selected-projects/building3.png");
+  background-image: url("../img/homepage/main/selected-projects/building3.png");
 }
 .portfolio__card-group .projects-card__card-img--4 {
-  background-image: url("../../img/homepage/main/selected-projects/portfolio-card/image.jpg");
+  background-image: url("../img/homepage/main/selected-projects/portfolio-card/image.jpg");
 }
 .portfolio__card-group .projects-card__card-img--5 {
-  background-image: url("../../img/homepage/main/selected-projects/portfolio-card/image-1.jpg");
+  background-image: url("../img/homepage/main/selected-projects/portfolio-card/image-1.jpg");
 }
 
 .swiper-button-disabled {
