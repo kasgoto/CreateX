@@ -3,6 +3,7 @@
     "video.js": "^8.17.3"
   },
   "dependencies": {
+    "swiper": "^11.1.10",
     "videojs-youtube": "^3.0.1"
   }
 }

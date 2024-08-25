@@ -1,6 +1,8 @@
 .portfolio {
+  overflow-x: hidden;
   &__title-wrap {
     position: relative;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -14,9 +16,21 @@
     flex-grow: 1;
   }
 
+  &__buttons-relative {
+    position: relative;
+  }
+
   &__buttons-wrap {
     position: absolute;
-    right: -13px;
+    display: flex;
+    gap: 25px;
+    width: 150px;
+    height: 48px;
+    right: -52px;
+    top: -50px;
+    @include mediaTablet {
+      top: -10px;
+    }
   }
 
   &__button {
@@ -25,13 +39,22 @@
     height: 48px;
     border-radius: 50%;
     background-color: transparent;
-    transition: background-color 0.2s ease-in;
+    transition: background-color 0.2s ease-in, width 0.2s ease-in,
+      height 0.2s ease-in;
+    background-color: $accent;
+    @include mediaTablet {
+      width: 40px;
+      height: 40px;
+    }
     &:hover {
-      background-color: $accent;
+      background-color: rgba(253, 116, 82, 0.748);
     }
 
     &:hover &-icon {
       background-color: white;
+    }
+    &::after {
+      content: "";
     }
   }
 
@@ -47,7 +70,7 @@
     height: 100%;
 
     @include maskBg("../img/homepage/main/selected-projects/btn/prev-btn.svg");
-    background-color: $gray800;
+    background-color: $white;
     transition: background-color 0.2s ease-in;
   }
 
@@ -58,92 +81,53 @@
     transform: rotate(180deg);
   }
 
+  &__container {
+    padding: 0;
+  }
+
   &__cards-wrap {
+    // padding: 0 70px;
+    height: 520px;
+    // @include mediaTablet {
+    //   padding: 0 15px;
+    // }
+    // @media screen and (max-width: 1372px) {
+    //   padding: 0 15px;
+    //   margin: auto;
+    // }
   }
 
   &__card-group {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-  }
-
-  &__card-group-1 {
-  }
-
-  &__card {
     position: relative;
-    height: 440px;
-    border-radius: 4px;
-    box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03),
-      0 12px 10px -6px rgba(154, 156, 165, 0.04),
-      0 30px 24px -10px rgba(154, 156, 165, 0.05),
-      0 80px 80px -20px rgba(154, 156, 165, 0.08);
-    background: $white;
-    &:hover &-info {
-      height: 158px;
-      margin-top: 282px;
-    }
-    &:hover .portfolio__card-btn {
-      visibility: visible;
-      opacity: 1;
-      height: 44px;
-      font-size: 14px;
+    padding: 0;
+    .projects-card__card-img {
+      &--1 {
+        background-image: url("../../img/homepage/main/selected-projects/building1.jpg");
+      }
+      &--2 {
+        background-image: url("../../img/homepage/main/selected-projects/building2.png");
+      }
+      &--3 {
+        background-image: url("../../img/homepage/main/selected-projects/building3.png");
+      }
+      &--4 {
+        background-image: url("../../img/homepage/main/selected-projects/portfolio-card/image.jpg");
+      }
+      &--5 {
+        background-image: url("../../img/homepage/main/selected-projects/portfolio-card/image-1.jpg");
+      }
     }
   }
-
-  &__card-img {
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    background: url("../../img/homepage/main/selected-projects/building1.jpg")
-      no-repeat;
+}
+.swiper-button-disabled {
+  & .portfolio__button-icon {
+    background-color: $gray800;
   }
-
-  &__card-img--1 {
-  }
-
-  &__card-info {
-    position: relative;
-    padding: 16px 20px 0 20px;
-    height: 95px;
-    margin-top: 345px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $white;
-    border-radius: 4px;
-    transition: margin 0.2s ease-in, height 0.2s ease-in;
-  }
-
-  &__card-title {
-    margin-bottom: 4px;
-  }
-
-  &__card-description {
-    font-size: 14px;
-    margin-bottom: 24px;
-  }
-
-  &__card-btn {
-    opacity: 0;
-    visibility: hidden;
-    transition: visibility 0s, opacity 0.2s linear, font-size 0.2s ease-in;
-
-    @include btnAction;
-    color: $accent;
-    border: 1px solid $accent;
-    padding: 0px 10px;
-    width: 172px;
-
-    font-size: 0;
-    line-height: 314%;
-    letter-spacing: 0.04em;
-    height: 0;
-    &:hover {
-      border-color: $dark;
+  background-color: transparent;
+  &:hover {
+    background-color: transparent;
+    & .portfolio__button-icon {
+      background-color: $gray800;
     }
   }
 }

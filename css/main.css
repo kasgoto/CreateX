@@ -1250,8 +1250,12 @@ a:hover {
   }
 }
 
+.portfolio {
+  overflow-x: hidden;
+}
 .portfolio__title-wrap {
   position: relative;
+  padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1270,9 +1274,24 @@ a:hover {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+.portfolio__buttons-relative {
+  position: relative;
+}
 .portfolio__buttons-wrap {
   position: absolute;
-  right: -13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+  width: 150px;
+  height: 48px;
+  right: -52px;
+  top: -50px;
+}
+@media screen and (max-width: 959px) {
+  .portfolio__buttons-wrap {
+    top: -10px;
+  }
 }
 .portfolio__button {
   position: relative;
@@ -1280,14 +1299,24 @@ a:hover {
   height: 48px;
   border-radius: 50%;
   background-color: transparent;
-  -webkit-transition: background-color 0.2s ease-in;
-  transition: background-color 0.2s ease-in;
+  -webkit-transition: background-color 0.2s ease-in, width 0.2s ease-in, height 0.2s ease-in;
+  transition: background-color 0.2s ease-in, width 0.2s ease-in, height 0.2s ease-in;
+  background-color: #ff5a30;
+}
+@media screen and (max-width: 959px) {
+  .portfolio__button {
+    width: 40px;
+    height: 40px;
+  }
 }
 .portfolio__button:hover {
-  background-color: #ff5a30;
+  background-color: rgba(253, 116, 82, 0.748);
 }
 .portfolio__button:hover .portfolio__button-icon {
   background-color: white;
+}
+.portfolio__button::after {
+  content: "";
 }
 .portfolio__button-icon {
   content: "";
@@ -1300,7 +1329,7 @@ a:hover {
   height: 100%;
   -webkit-mask: url("../img/homepage/main/selected-projects/btn/prev-btn.svg") no-repeat;
   mask: url("../img/homepage/main/selected-projects/btn/prev-btn.svg") no-repeat;
-  background-color: #424551;
+  background-color: #fff;
   -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
 }
@@ -1308,39 +1337,94 @@ a:hover {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-.portfolio__card-group {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+.portfolio__container {
+  padding: 0;
 }
-.portfolio__card {
+.portfolio__cards-wrap {
+  height: 520px;
+}
+.portfolio__card-group {
+  position: relative;
+  padding: 0;
+}
+.portfolio__card-group .projects-card__card-img--1 {
+  background-image: url("../../img/homepage/main/selected-projects/building1.jpg");
+}
+.portfolio__card-group .projects-card__card-img--2 {
+  background-image: url("../../img/homepage/main/selected-projects/building2.png");
+}
+.portfolio__card-group .projects-card__card-img--3 {
+  background-image: url("../../img/homepage/main/selected-projects/building3.png");
+}
+.portfolio__card-group .projects-card__card-img--4 {
+  background-image: url("../../img/homepage/main/selected-projects/portfolio-card/image.jpg");
+}
+.portfolio__card-group .projects-card__card-img--5 {
+  background-image: url("../../img/homepage/main/selected-projects/portfolio-card/image-1.jpg");
+}
+
+.swiper-button-disabled {
+  background-color: transparent;
+}
+.swiper-button-disabled .portfolio__button-icon {
+  background-color: #424551;
+}
+.swiper-button-disabled:hover {
+  background-color: transparent;
+}
+.swiper-button-disabled:hover .portfolio__button-icon {
+  background-color: #424551;
+}
+
+.projects-card {
+  z-index: 3;
   position: relative;
   height: 440px;
+  max-width: 390px;
   border-radius: 4px;
-  -webkit-box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
-          box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
   background: #fff;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in;
+  transition: -webkit-box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
+  -webkit-box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -4px rgba(154, 156, 165, 0.04), 0 30px 15px -7px rgba(154, 156, 165, 0.05), 0 50px 30px -10px rgba(154, 156, 165, 0.08);
+          box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -4px rgba(154, 156, 165, 0.04), 0 30px 15px -7px rgba(154, 156, 165, 0.05), 0 50px 30px -10px rgba(154, 156, 165, 0.08);
 }
-.portfolio__card:hover .portfolio__card-info {
+.projects-card:hover {
+  -webkit-box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05), 0 12px 10px -4px rgba(154, 156, 165, 0.08), 0 30px 15px -7px rgba(154, 156, 165, 0.1), 0 50px 30px -10px rgba(154, 156, 165, 0.16);
+          box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05), 0 12px 10px -4px rgba(154, 156, 165, 0.08), 0 30px 15px -7px rgba(154, 156, 165, 0.1), 0 50px 30px -10px rgba(154, 156, 165, 0.16);
+}
+.projects-card:hover .projects-card__card-info {
   height: 158px;
   margin-top: 282px;
 }
-.portfolio__card:hover .portfolio__card-btn {
+.projects-card:hover .projects-card__card-btn {
   visibility: visible;
   opacity: 1;
   height: 44px;
   font-size: 14px;
 }
-.portfolio__card-img {
+.projects-card:hover .projects-card__card-img {
+  -webkit-transition: background-size 0.2s ease-in;
+  transition: background-size 0.2s ease-in;
+  background-size: auto 110%;
+}
+.projects-card__card-img {
   content: "";
   position: absolute;
   left: 0px;
   top: 0px;
   width: 100%;
   height: 100%;
-  background: url("../../img/homepage/main/selected-projects/building1.jpg") no-repeat;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  -webkit-transition: background-size 0.2s ease-in;
+  transition: background-size 0.2s ease-in;
+  background: url("../../img/homepage/main/selected-projects/building1.jpg") top center no-repeat;
+  background-size: auto 100%;
+  background-position: 50% 50%;
 }
-.portfolio__card-info {
+.projects-card__card-info {
   position: relative;
   padding: 16px 20px 0 20px;
   height: 95px;
@@ -1360,14 +1444,14 @@ a:hover {
   -webkit-transition: margin 0.2s ease-in, height 0.2s ease-in;
   transition: margin 0.2s ease-in, height 0.2s ease-in;
 }
-.portfolio__card-title {
+.projects-card__card-title {
   margin-bottom: 4px;
 }
-.portfolio__card-description {
+.projects-card__card-description {
   font-size: 14px;
   margin-bottom: 24px;
 }
-.portfolio__card-btn {
+.projects-card__card-btn {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: visibility 0s, opacity 0.2s linear, font-size 0.2s ease-in;
@@ -1396,10 +1480,10 @@ a:hover {
   letter-spacing: 0.04em;
   height: 0;
 }
-.portfolio__card-btn:hover {
+.projects-card__card-btn:hover {
   background-color: #fff;
   color: #1e212c;
 }
-.portfolio__card-btn:hover {
+.projects-card__card-btn:hover {
   border-color: #1e212c;
 }
