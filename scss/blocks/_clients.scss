@@ -1,0 +1,51 @@
+.clients {
+  margin-top: 80px;
+  @include mediaTablet {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    background-color: $gray200;
+    background-size: cover;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    min-height: 934px;
+    background-color: $gray200;
+    z-index: -10;
+    transform: translate(0, -100px);
+    @include mediaTablet {
+      transform: translate(0, 0);
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: $gray200;
+      background-size: cover;
+    }
+  }
+
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: 60px;
+    text-align: center;
+    @include mediaTablet {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__partners-wrap {
+    margin-bottom: 170px;
+    @include mediaTablet {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__reviews-wrap {
+  }
+}

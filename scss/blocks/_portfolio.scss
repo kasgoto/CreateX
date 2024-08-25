@@ -1,5 +1,9 @@
 .portfolio {
-  overflow-x: hidden;
+  overflow: hidden;
+  margin-bottom: 200px;
+  @include mediaTablet {
+    margin-bottom: 40px;
+  }
   &__title-wrap {
     position: relative;
     padding: 0 15px;
@@ -116,6 +120,46 @@
       &--5 {
         background-image: url("../img/homepage/main/selected-projects/portfolio-card/image-1.jpg");
       }
+    }
+  }
+
+  &__cta-wrap {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    padding: 0 15px;
+    @include mediaTablet {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__cta-title {
+  }
+
+  &__cta-btn {
+    @include btnAction();
+    padding: 0px 30px;
+    width: 224px;
+    height: 52px;
+    background-color: $accent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 325%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    @include mediaTablet {
+      font-size: 14px;
+      padding: 0px 20px;
+      width: 200px;
+      height: 52px;
+    }
+    &:hover {
+      border-color: $dark;
     }
   }
 }

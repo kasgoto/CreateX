@@ -1,0 +1,25 @@
+.clients-logos {
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+  gap: 100px;
+
+  @include mediaTablet {
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  &__item {
+    margin: auto;
+    width: 120px;
+    height: 64px;
+    vertical-align: middle;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: opacity 0.2s ease-in, filter 0.2s ease-in;
+    &:hover {
+      opacity: 1;
+      filter: grayscale(0);
+    }
+  }
+}

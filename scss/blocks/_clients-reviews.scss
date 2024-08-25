@@ -1,0 +1,170 @@
+.clients-reviews {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  row-gap: 135px;
+  overflow: hidden;
+  @media screen and (max-width: 1260px) {
+    row-gap: 80px;
+  }
+  @include mediaTablet {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 40px;
+    row-gap: 0;
+  }
+  &__info {
+    max-width: 50%;
+    @include mediaTablet {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 60px;
+    @include mediaTablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__swiper {
+    max-width: 100%;
+    min-height: 250px;
+  }
+
+  &__swiper-wrapper {
+    max-width: 100%;
+    min-height: 250px;
+  }
+
+  &__swiper-slide {
+  }
+
+  &__profile-icon {
+    margin-bottom: 24px;
+    border-radius: 100%;
+    width: 72px;
+    height: 72px;
+    box-sizing: content-box;
+    @include mediaTablet {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: $gray800;
+    margin-bottom: 24px;
+    @include mediaTablet {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__username {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: $gray900;
+    margin: 0 0 4px 0;
+  }
+
+  &__user-position {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $gray700;
+  }
+
+  &__image-wrap {
+  }
+
+  &__image {
+    box-sizing: border-box;
+    max-height: 550px;
+    max-width: 495px;
+    @media screen and (max-width: 1260px) {
+      max-width: 390px;
+    }
+  }
+
+  &__buttons-relative {
+    position: relative;
+  }
+
+  &__buttons-wrap {
+    position: absolute;
+    display: flex;
+    gap: 25px;
+    width: 150px;
+    height: 48px;
+    right: -45px;
+    top: -50px;
+    @include mediaTablet {
+      top: -75px;
+      right: -20;
+    }
+  }
+
+  &__button {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in, width 0.2s ease-in,
+      height 0.2s ease-in;
+    @include mediaTablet {
+      width: 40px;
+      height: 40px;
+    }
+    &:hover {
+      background-color: rgba(253, 116, 82, 0.748);
+    }
+
+    &:hover &-icon {
+      background-color: white;
+    }
+    &::after {
+      content: "";
+    }
+  }
+
+  &__button-icon {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-12px, -12px);
+
+    width: 100%;
+    height: 100%;
+
+    @include maskBg("../img/homepage/main/selected-projects/btn/prev-btn.svg");
+    background-color: $gray800;
+    transition: background-color 0.2s ease-in;
+  }
+
+  &__button--prev {
+  }
+
+  &__button--next {
+    transform: rotate(180deg);
+  }
+}
+
+.swiper-button-disabled {
+  & .clients-reviews__button-icon {
+    background-color: $gray800;
+  }
+  background-color: transparent;
+  &:hover {
+    background-color: transparent;
+    & .clients-reviews__button-icon {
+      background-color: $gray800;
+    }
+  }
+}

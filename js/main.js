@@ -29,6 +29,22 @@ const swiper = new Swiper(".portfolio__cards-wrap", {
   },
 })
 
+const swiperReviews = new Swiper(".clients-reviews__swiper", {
+  slidesPerView: 1,
+  spaceBetween: 15,
+  // configure Swiper to use modules
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+})
+
 // Установка default громкости
 var myPlayer = videojs("video")
 
