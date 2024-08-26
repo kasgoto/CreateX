@@ -1,22 +1,37 @@
 .clients {
+  position: relative;
   margin-top: 80px;
   @include mediaTablet {
     padding-top: 40px;
     padding-bottom: 40px;
     margin-top: 20px;
-    height: 100%;
-    width: 100%;
-    background-color: $gray200;
-    background-size: cover;
   }
   &::before {
+    z-index: -2;
     content: "";
     position: absolute;
+    left: -750px;
+    bottom: -400px;
+    width: 100%;
+    height: 100%;
+    background: url("../img/homepage/main/facts/bg-image.png") no-repeat;
+    transform: rotate(-53deg);
+    @include mediaTablet {
+      transform: rotate(-75deg);
+      bottom: -500px;
+      left: -450px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
     min-height: 934px;
     background-color: $gray200;
-    z-index: -10;
+    z-index: -1;
     transform: translate(0, -100px);
     @include mediaTablet {
       transform: translate(0, 0);

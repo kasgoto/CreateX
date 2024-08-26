@@ -54,4 +54,12 @@
 
     background: $accent;
   }
+
+  &__checkbox {
+    accent-color: $accent;
+    border-radius: 3px;
+    width: 16px;
+    height: 16px;
+    background: $accent;
+  }
 }

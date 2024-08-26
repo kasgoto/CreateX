@@ -1,0 +1,120 @@
+.application {
+  position: relative;
+  padding: 80px 0;
+  @include mediaTablet {
+    padding: 30px 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: -10;
+
+    transform: translate(0, 0);
+    background-image: url("../img/homepage/main/discuss/background.jpg");
+
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+  &__container {
+    display: flex;
+    justify-content: end;
+    @include mediaTablet {
+      justify-content: center;
+    }
+  }
+
+  &__form-container {
+    padding: 48px 40px;
+    @include mediaTablet {
+      padding: 30px 26px;
+    }
+    border: 1px solid $gray300;
+    border-radius: 4px;
+    max-width: 495px;
+    min-height: 666px;
+    @include mediaTablet {
+      min-height: 500px;
+      max-height: 666px;
+    }
+
+    box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05),
+      0 12px 10px -6px rgba(30, 33, 44, 0.08),
+      0 26px 24px -10px rgba(30, 33, 44, 0.1),
+      0 60px 80px -20px rgba(30, 33, 44, 0.16);
+    background: $white;
+  }
+
+  &__form-title {
+    margin-bottom: 24px;
+    @include mediaTablet {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input-item {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 150%;
+    @include mediaTablet {
+      margin-bottom: 15px;
+    }
+    &--checkbox {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__input-title {
+    color: $gray800;
+    margin-bottom: 8px;
+    @include mediaTablet {
+      margin-bottom: 6px;
+    }
+    &--checkbox {
+      padding-left: 12px;
+      max-width: 350px;
+      @include mediaTablet {
+        padding-left: 8px;
+      }
+    }
+  }
+
+  &__input-message {
+    position: relative;
+    height: 66px;
+    &::placeholder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 15px 0 0 15px;
+    }
+    &:focus {
+      &::placeholder {
+        color: transparent;
+      }
+    }
+  }
+
+  &__input-checkbox {
+    margin-bottom: 27px;
+    @include mediaTablet {
+      margin-bottom: 29px;
+    }
+  }
+
+  &__btn {
+    align-self: center;
+    width: 174px;
+    padding: 0px;
+  }
+}

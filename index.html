@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header class="header none1">
+    <header class="header">
       <div class="header__top">
         <div class="header__top-row">
           <nav class="header__nav nav navbar navbar-expand-xl">
@@ -84,7 +84,7 @@
 
       <div class="header__hero">
         <div class="carousel">
-          <div id="carouselExampleCaptions" class="carousel slide">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel__inner carousel-inner">
               <div class="carousel__item carousel-item active">
                 <img
@@ -298,7 +298,7 @@
     </header>
 
     <main>
-      <section class="video none1">
+      <section class="video">
         <div class="container">
           <h2 class="video__title title-2">
             We are Createx Construction Bureau
@@ -321,7 +321,7 @@
         </div>
       </section>
 
-      <section class="values none1">
+      <section class="values">
         <div class="container">
           <h2 class="values__title title-2">Our values</h2>
           <p class="values__description description">
@@ -375,7 +375,7 @@
         </div>
       </section>
 
-      <section class="know-more none1">
+      <section class="know-more">
         <div class="know-more__form-wrapper container">
           <h2 class="know-more__title title-3">
             Want to know more? Ask us a question:
@@ -413,7 +413,7 @@
         </div>
       </section>
 
-      <section class="services none1">
+      <section class="services">
         <div class="container">
           <h2 class="services__title title-2">Our services</h2>
           <p class="services__description description">
@@ -458,7 +458,7 @@
         </div>
       </section>
 
-      <section class="portfolio none1">
+      <section class="portfolio">
         <div class="portfolio__container container">
           <div class="portfolio__title-wrap">
             <h2 class="portfolio__title title-2">
@@ -560,14 +560,18 @@
             </div>
           </div>
 
-          <div class="portfolio__cta-wrap">
-            <h3 class="portfolio__cta-title title-3">Explore all our works</h3>
-            <button class="portfolio__cta-btn">View portfolio</button>
+          <div class="portfolio__cta-wrap section-cta">
+            <h3 class="portfolio__cta-title section-cta__title title-3">
+              Explore all our works
+            </h3>
+            <button class="portfolio__cta-btn section-cta__btn">
+              View portfolio
+            </button>
           </div>
         </div>
       </section>
 
-      <section class="clients none1">
+      <section class="clients">
         <div class="clients__container container">
           <h2 class="clients__title title-2">Supported by 12+ partners</h2>
           <div class="clients__partners-wrap clients-logos">
@@ -704,7 +708,344 @@
           </div>
         </div>
       </section>
+
+      <section class="facts">
+        <div class="facts__container container">
+          <h2 class="facts__title title-2">Some facts and figures</h2>
+          <div class="facts__graphics">
+            <div class="facts__graphics-item facts__graphics-item--1">
+              <p class="facts__graphics-title">98%</p>
+              <p class="facts__graphs-description">Totally satisfied clients</p>
+            </div>
+
+            <div class="facts__graphics-item facts__graphics-item--2">
+              <p class="facts__graphics-title">20</p>
+              <p class="facts__graphs-description">Years of experience</p>
+            </div>
+
+            <div class="facts__graphics-item facts__graphics-item--3">
+              <p class="facts__graphics-title">9452</p>
+              <p class="facts__graphs-description">Working hours spent</p>
+            </div>
+
+            <div class="facts__graphics-item facts__graphics-item--4">
+              <p class="facts__graphics-title">100%</p>
+              <p class="facts__graphs-description">Succeeded projects</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="news__container container">
+          <h2 class="news__title title-2">Recent news</h2>
+
+          <div class="news__cards-wrap">
+            <div class="news__left">
+              <div class="news-card news-card--big">
+                <img
+                  class="news-card__img"
+                  src="img/homepage/main/news/article/news-main.jpg"
+                  width="705px"
+                  height="360px"
+                  alt="news photo"
+                  srcset=""
+                />
+
+                <div class="news-card__content">
+                  <h4 class="news-card__title title-4">
+                    How to Build Climate Change-Resilient Infrastructure
+                  </h4>
+                  <div class="news-card__info">
+                    <p class="news-card__category description">Industry News</p>
+                    <p class="news-card__date description">June 24, 2020</p>
+                    <p class="news-card__comments description">4 comments</p>
+                  </div>
+                  <p class="news-card__description description">
+                    Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas
+                    faucibus. Tincidunt aliquet sit vel, venenatis nulla.
+                    Integer bibendum turpis convallis enim, nibh convallis...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="news__right">
+              <div class="news-card news-card--sm">
+                <img
+                  class="news-card__img"
+                  src="img/homepage/main/news/article/news-2.jpg"
+                  width="495px"
+                  height="255px"
+                  alt="news photo"
+                  srcset=""
+                />
+
+                <div class="news-card__content">
+                  <h4 class="news-card__title title-4">
+                    How Construction Can Help Itself
+                  </h4>
+                  <div class="news-card__info">
+                    <p class="news-card__category description">Innovation</p>
+                    <p class="news-card__date description">June 12, 2020</p>
+                    <p class="news-card__comments description">No comments</p>
+                  </div>
+                </div>
+              </div>
+              <div class="news-card news-card--sm">
+                <img
+                  class="news-card__img"
+                  src="img/homepage/main/news/article/news-3.jpg"
+                  width="495px"
+                  height="255px"
+                  alt="news photo"
+                  srcset=""
+                />
+
+                <div class="news-card__content">
+                  <h4 class="news-card__title title-4">
+                    Types of Flooring Materials
+                  </h4>
+                  <div class="news-card__info">
+                    <p class="news-card__category description">Company News</p>
+                    <p class="news-card__date description">December 1, 2019</p>
+                    <p class="news-card__comments description">No comments</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-cta">
+            <h3 class="section-cta__title title-3">
+              Explore all our new posts
+            </h3>
+            <button class="section-cta__btn">View all news</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="application">
+        <div class="application__container container">
+          <div class="application__form-container">
+            <h3 class="application__form-title title-3">
+              A quick way to discuss details
+            </h3>
+            <form action="" class="application__form form">
+              <div class="application__input-item form__input-item">
+                <p
+                  class="application__input-title form__input-title description"
+                >
+                  Name*
+                </p>
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Your name"
+                />
+              </div>
+              <div class="application__input-item form__input-item">
+                <p
+                  class="application__input-title form__input-title description"
+                >
+                  Phone*
+                </p>
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Your phone number"
+                  data-tel-input
+                />
+              </div>
+              <div class="application__input-item form__input-item">
+                <p
+                  class="application__input-title form__input-title description"
+                >
+                  Email
+                </p>
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Your working email"
+                />
+              </div>
+              <div class="application__input-item form__input-item">
+                <p
+                  class="application__input-title form__input-title description"
+                >
+                  Message*
+                </p>
+                <input
+                  type="text"
+                  class="application__input-message form__input form__input--lg"
+                  placeholder="Your message"
+                />
+              </div>
+              <div
+                class="application__input-item application__input-item--checkbox form__input-item"
+              >
+                <input
+                  class="application__input-checkbox form__checkbox"
+                  type="checkbox"
+                  id="subscribeNews"
+                  name="subscribe"
+                  value="newsletter"
+                />
+                <label for="subscribeNews" class="visually-hidden"
+                  >Subscribe to newsletter?</label
+                >
+                <p
+                  class="application__input-title application__input-title--checkbox form__input-title description"
+                >
+                  I agree to receive communications from Createx Construction
+                  Bureau.
+                </p>
+              </div>
+              <button type="submit" class="application__btn form__button">
+                Send request
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__top">
+          <div class="footer__top-left">
+            <div class="footer__top-nav">
+              <a href="#" class="footer__logo">
+                <img src="img/homepage/footer/logo.svg" alt="CreateX" />
+              </a>
+              <div class="footer__socials">
+                <a href="#" class="footer__socials-item"
+                  ><img
+                    src="img/homepage/footer/Whatsapp.svg"
+                    alt="whatsapp"
+                    class="footer__socials-img"
+                /></a>
+                <a href="#" class="footer__socials-item"
+                  ><img
+                    src="img/homepage/footer/Messanger.svg"
+                    alt="messenger"
+                    class="footer__socials-img"
+                /></a>
+                <a href="#" class="footer__socials-item"
+                  ><img
+                    src="img/homepage/footer/Facebook.svg"
+                    alt="facebook"
+                    class="footer__socials-img"
+                /></a>
+                <a href="#" class="footer__socials-item"
+                  ><img
+                    src="img/homepage/footer/Twitter.svg"
+                    alt="twitter"
+                    class="footer__socials-img"
+                /></a>
+                <a href="#" class="footer__socials-item"
+                  ><img
+                    src="img/homepage/footer/YouTube.svg"
+                    alt="youtube"
+                    class="footer__socials-img"
+                /></a>
+              </div>
+            </div>
+            <p class="footer__top-description description">
+              Createx Construction Bureau has been successfully operating in the
+              USA construction market since 2000. We are proud to offer you
+              quality construction and exemplary service. Our mission is to set
+              the highest standards for construction sphere.
+            </p>
+          </div>
+          <div class="footer__top-right">
+            <h4 class="footer__top-title title-4">Let’s stay in touch</h4>
+            <form action="" class="footer__top-form form">
+              <div class="footer__input-item form__input-item">
+                <input
+                  type="text"
+                  class="footer__input form__input"
+                  placeholder="Your email address"
+                />
+              </div>
+              <button type="submit" class="footer__input-btn form__button">
+                Subscribe
+              </button>
+            </form>
+            <p class="footer_input-description">
+              *Subscribe to our newsletter to receive communications and early
+              updates from Createx Construction Bureau.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__middle">
+          <div class="footer__contacts">
+            <h4 class="footer__middle-title title-5">HEAD OFFICE</h4>
+            <div class="footer__contacts-item">
+              <p class="footer__item-name">Address:</p>
+              <a href="" class="footer__item-text link-disabled"
+                >8502 Preston Rd. Inglewood, New York</a
+              >
+            </div>
+            <div class="footer__contacts-item">
+              <p class="footer__item-name">Call:</p>
+              <a href="tel:4055550128" class="footer__item-text"
+                >(405) 555-0128</a
+              >
+            </div>
+            <div class="footer__contacts-item">
+              <p class="footer__item-name">Email:</p>
+              <a href="mailto:hello@createx.com" class="footer__item-text"
+                >hello@createx.com</a
+              >
+            </div>
+          </div>
+          <div class="footer__middle-nav-wrap">
+            <div class="footer__who-we-are">
+              <h5 class="footer__middle-title title-5">WHO WE ARE</h5>
+              <div class="footer__who-we-are-nav">
+                <div class="footer__who-we-are-item">
+                  <a href="#" class="footer__item-text">About Us</a>
+                  <a href="#" class="footer__item-text">Available Positions</a>
+                  <a href="#" class="footer__item-text">Contacts</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer__our-experience">
+              <h5 class="footer__middle-title title-5">OUR experience</h5>
+              <div class="footer__who-we-are-nav">
+                <div class="footer__who-we-are-item">
+                  <a href="#" class="footer__item-text">Services</a>
+                  <a href="#" class="footer__item-text">Work</a>
+                  <a href="#" class="footer__item-text">News</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__copyright">
+            <p class="footer__copyright-text">
+              © All rights reserved. Made with
+              <img
+                class="footer__heart"
+                src="img/homepage/footer/heart.svg"
+                alt="heart"
+                srcset=""
+              />
+              by Createx Studio
+            </p>
+            <div class="footer__go-top-wrap">
+              <p class="footer__go-top-text">GO&nbsp;TOP</p>
+              <button class="footer__go-top-btn"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="node_modules/swiper/swiper-bundle.js"></script>
     <script src="node_modules/swiper/swiper-bundle.min.js"></script>
