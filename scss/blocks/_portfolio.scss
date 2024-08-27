@@ -1,6 +1,6 @@
 .portfolio {
   overflow: hidden;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
   @include mediaTablet {
     margin-bottom: 40px;
   }
@@ -92,6 +92,9 @@
   &__cards-wrap {
     // padding: 0 70px;
     height: 520px;
+    @include mediaTablet {
+      height: 490px;
+    }
     // @include mediaTablet {
     //   padding: 0 15px;
     // }
@@ -106,19 +109,19 @@
     padding: 0;
     .projects-card__card-img {
       &--1 {
-        background-image: url("../img/homepage/main/selected-projects/building1.jpg");
+        background-image: url("../img/homepage/main/selected-projects/building1.webp");
       }
       &--2 {
-        background-image: url("../img/homepage/main/selected-projects/building2.png");
+        background-image: url("../img/homepage/main/selected-projects/building2.webp");
       }
       &--3 {
-        background-image: url("../img/homepage/main/selected-projects/building3.png");
+        background-image: url("../img/homepage/main/selected-projects/building3.webp");
       }
       &--4 {
-        background-image: url("../img/homepage/main/selected-projects/portfolio-card/image.jpg");
+        background-image: url("../img/homepage/main/selected-projects/portfolio-card/image.webp");
       }
       &--5 {
-        background-image: url("../img/homepage/main/selected-projects/portfolio-card/image-1.jpg");
+        background-image: url("../img/homepage/main/selected-projects/portfolio-card/image-1.webp");
       }
     }
   }

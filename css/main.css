@@ -642,7 +642,7 @@ a:hover {
 }
 @media screen and (max-width: 959px) {
   .video {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 }
 .video__title {
@@ -895,6 +895,7 @@ a:hover {
 @media screen and (max-width: 959px) {
   .know-more {
     margin-bottom: 0;
+    margin-top: 20px;
   }
 }
 .know-more__form-wrapper {
@@ -910,6 +911,8 @@ a:hover {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    -webkit-box-shadow: 0 -10px 10px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+            box-shadow: 0 -10px 10px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
   }
 }
 .know-more__title {
@@ -1031,37 +1034,33 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  overflow: hidden;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 @media screen and (max-width: 959px) {
   .services {
     position: relative;
     padding-top: 80px;
-    margin-bottom: 60px;
+    padding-bottom: 40px;
   }
 }
 .services::before {
   content: "";
+  overflow-x: hidden;
   position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
-  max-height: 850px;
+  height: calc(100% + 120px);
   background-color: #f4f5f6;
-  background-image: url("../img/homepage/main/our-services/bg-image.png");
-  z-index: -10;
+  background-image: url("../img/homepage/main/our-services/bg-image.webp");
+  z-index: -1;
   -webkit-transform: translate(0, -197px);
           transform: translate(0, -197px);
 }
 @media screen and (max-width: 959px) {
   .services::before {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-    background-image: url("../img/homepage/main/our-services/bg-image.png");
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
+    -webkit-transform: translate(0, -170px);
+            transform: translate(0, -170px);
   }
 }
 .services__title {
@@ -1139,17 +1138,17 @@ a:hover {
   background-size: contain;
 }
 .services__card-wrap--1::after {
-  background: url("../img/homepage/main/our-services/hover/construction.jpg") center center;
+  background: url("../img/homepage/main/our-services/hover/construction.webp") center center;
 }
 .services__card-wrap--2::after {
-  background: url("../img/homepage/main/our-services/hover/project.jpg");
+  background: url("../img/homepage/main/our-services/hover/project.webp");
 }
 .services__card-wrap--3::after {
-  background: url("../img/homepage/main/our-services/hover/interior.jpg");
+  background: url("../img/homepage/main/our-services/hover/interior.webp");
   background-position: center;
 }
 .services__card-wrap--4::after {
-  background: url("../img/homepage/main/our-services/hover/repairs.jpg");
+  background: url("../img/homepage/main/our-services/hover/repairs.webp");
   background-position: 70%;
 }
 .services__card-wrap:hover::after {
@@ -1279,7 +1278,7 @@ a:hover {
 
 .portfolio {
   overflow: hidden;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
 }
 @media screen and (max-width: 959px) {
   .portfolio {
@@ -1376,24 +1375,29 @@ a:hover {
 .portfolio__cards-wrap {
   height: 520px;
 }
+@media screen and (max-width: 959px) {
+  .portfolio__cards-wrap {
+    height: 490px;
+  }
+}
 .portfolio__card-group {
   position: relative;
   padding: 0;
 }
 .portfolio__card-group .projects-card__card-img--1 {
-  background-image: url("../img/homepage/main/selected-projects/building1.jpg");
+  background-image: url("../img/homepage/main/selected-projects/building1.webp");
 }
 .portfolio__card-group .projects-card__card-img--2 {
-  background-image: url("../img/homepage/main/selected-projects/building2.png");
+  background-image: url("../img/homepage/main/selected-projects/building2.webp");
 }
 .portfolio__card-group .projects-card__card-img--3 {
-  background-image: url("../img/homepage/main/selected-projects/building3.png");
+  background-image: url("../img/homepage/main/selected-projects/building3.webp");
 }
 .portfolio__card-group .projects-card__card-img--4 {
-  background-image: url("../img/homepage/main/selected-projects/portfolio-card/image.jpg");
+  background-image: url("../img/homepage/main/selected-projects/portfolio-card/image.webp");
 }
 .portfolio__card-group .projects-card__card-img--5 {
-  background-image: url("../img/homepage/main/selected-projects/portfolio-card/image-1.jpg");
+  background-image: url("../img/homepage/main/selected-projects/portfolio-card/image-1.webp");
 }
 
 .swiper-button-disabled {
@@ -1420,12 +1424,12 @@ a:hover {
   transition: -webkit-box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
-  -webkit-box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -4px rgba(154, 156, 165, 0.04), 0 30px 15px -7px rgba(154, 156, 165, 0.05), 0 50px 30px -10px rgba(154, 156, 165, 0.08);
-          box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -4px rgba(154, 156, 165, 0.04), 0 30px 15px -7px rgba(154, 156, 165, 0.05), 0 50px 30px -10px rgba(154, 156, 165, 0.08);
+  -webkit-box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -4px rgba(154, 156, 165, 0.04), 0 30px 15px -7px rgba(154, 156, 165, 0.05), 0 40px 25px -10px rgba(154, 156, 165, 0.08);
+          box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -4px rgba(154, 156, 165, 0.04), 0 30px 15px -7px rgba(154, 156, 165, 0.05), 0 40px 25px -10px rgba(154, 156, 165, 0.08);
 }
 .projects-card:hover {
-  -webkit-box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05), 0 12px 10px -4px rgba(154, 156, 165, 0.08), 0 30px 15px -7px rgba(154, 156, 165, 0.1), 0 50px 30px -10px rgba(154, 156, 165, 0.16);
-          box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05), 0 12px 10px -4px rgba(154, 156, 165, 0.08), 0 30px 15px -7px rgba(154, 156, 165, 0.1), 0 50px 30px -10px rgba(154, 156, 165, 0.16);
+  -webkit-box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05), 0 12px 10px -4px rgba(154, 156, 165, 0.08), 0 30px 15px -7px rgba(154, 156, 165, 0.1), 0 40px 25px -10px rgba(154, 156, 165, 0.16);
+          box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05), 0 12px 10px -4px rgba(154, 156, 165, 0.08), 0 30px 15px -7px rgba(154, 156, 165, 0.1), 0 40px 25px -10px rgba(154, 156, 165, 0.16);
 }
 .projects-card:hover .projects-card__card-info {
   height: 158px;
@@ -1452,7 +1456,7 @@ a:hover {
   border-radius: 4px;
   -webkit-transition: background-size 0.2s ease-in;
   transition: background-size 0.2s ease-in;
-  background: url("../../img/homepage/main/selected-projects/building1.jpg") top center no-repeat;
+  background: url("../../img/homepage/main/selected-projects/building1.webp") top center no-repeat;
   background-size: auto 100%;
   background-position: 50% 50%;
 }
@@ -1476,6 +1480,11 @@ a:hover {
   border-bottom-right-radius: 4px;
   -webkit-transition: margin 0.2s ease-in, height 0.2s ease-in;
   transition: margin 0.2s ease-in, height 0.2s ease-in;
+}
+@media screen and (max-width: 959px) {
+  .projects-card__card-info {
+    padding: 16px 10px 0 15px;
+  }
 }
 .projects-card__card-title {
   margin-bottom: 4px;
@@ -1523,24 +1532,25 @@ a:hover {
 
 .clients {
   position: relative;
-  margin-top: 80px;
+  padding-top: 80px;
 }
 @media screen and (max-width: 959px) {
   .clients {
-    padding-top: 40px;
+    overflow: hidden;
+    padding-top: 60px;
     padding-bottom: 40px;
-    margin-top: 20px;
   }
 }
 .clients::before {
   z-index: -2;
   content: "";
   position: absolute;
+  overflow-x: hidden;
   left: -750px;
-  bottom: -400px;
+  bottom: -450px;
   width: 100%;
   height: 100%;
-  background: url("../img/homepage/main/facts/bg-image.png") no-repeat;
+  background: url("../img/homepage/main/facts/bg-image.webp") no-repeat;
   -webkit-transform: rotate(-53deg);
           transform: rotate(-53deg);
 }
@@ -1782,7 +1792,7 @@ a:hover {
   grid-template-columns: repeat(6, 1fr);
   gap: 100px;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 950px) {
   .clients-logos {
     gap: 40px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1853,7 +1863,7 @@ a:hover {
     max-width: 100%;
     grid-row-gap: 20px;
     grid-column-gap: 28px;
-    grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+    grid-template-columns: repeat(2, 2fr);
   }
 }
 @media screen and (max-width: 770px) {
@@ -2284,7 +2294,7 @@ a:hover {
   z-index: -10;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
-  background-image: url("../img/homepage/main/discuss/background.jpg");
+  background-image: url("../img/homepage/main/discuss/background.webp");
   height: 100%;
   width: 100%;
   background-size: cover;

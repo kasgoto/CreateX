@@ -30,7 +30,7 @@
       max-width: 100%;
       grid-row-gap: 20px;
       grid-column-gap: 28px;
-      grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+      grid-template-columns: repeat(2, 2fr);
     }
     @media screen and (max-width: 770px) {
       max-width: 100%;

@@ -11,13 +11,13 @@
   box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03),
     0 12px 10px -4px rgba(154, 156, 165, 0.04),
     0 30px 15px -7px rgba(154, 156, 165, 0.05),
-    0 50px 30px -10px rgba(154, 156, 165, 0.08);
+    0 40px 25px -10px rgba(154, 156, 165, 0.08);
 
   &:hover {
     box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05),
       0 12px 10px -4px rgba(154, 156, 165, 0.08),
       0 30px 15px -7px rgba(154, 156, 165, 0.1),
-      0 50px 30px -10px rgba(154, 156, 165, 0.16);
+      0 40px 25px -10px rgba(154, 156, 165, 0.16);
   }
   &:hover &__card-info {
     height: 158px;
@@ -44,7 +44,7 @@
     border-radius: 4px;
     transition: background-size 0.2s ease-in;
 
-    background: url("../../img/homepage/main/selected-projects/building1.jpg")
+    background: url("../../img/homepage/main/selected-projects/building1.webp")
       top center no-repeat;
     background-size: auto 100%;
     background-position: 50% 50%;
@@ -56,6 +56,9 @@
   &__card-info {
     position: relative;
     padding: 16px 20px 0 20px;
+    @include mediaTablet {
+      padding: 16px 10px 0 15px;
+    }
     height: 95px;
     margin-top: 345px;
     display: flex;

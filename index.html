@@ -17,7 +17,6 @@
       crossorigin="anonymous"
     />
     <link href="node_modules/video.js/dist/video-js.css" rel="stylesheet" />
-    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="css/main.css" />
@@ -26,7 +25,7 @@
     <header class="header">
       <div class="header__top">
         <div class="header__top-row">
-          <nav class="header__nav nav navbar navbar-expand-xl">
+          <nav class="header__nav nav navbar navbar-expand-xl" id="header__nav">
             <div class="container container-fluid">
               <a href="#" class="header__logo navbar-brand">
                 <img src="img/homepage/header/logo.svg" alt="CreateX" />
@@ -84,11 +83,15 @@
 
       <div class="header__hero">
         <div class="carousel">
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
             <div class="carousel__inner carousel-inner">
               <div class="carousel__item carousel-item active">
                 <img
-                  src="img/homepage/main/carousel/bg-image1.jpg"
+                  src="img/homepage/main/carousel/bg-image1.webp"
                   class="carousel__bg d-block w-100"
                   alt="slide 1"
                 />
@@ -123,7 +126,7 @@
 
               <div class="carousel__item carousel-item">
                 <img
-                  src="img/homepage/main/carousel/bg-image2.jpg"
+                  src="img/homepage/main/carousel/bg-image2.webp"
                   class="carousel__bg d-block w-100"
                   alt="slide 1"
                 />
@@ -158,7 +161,7 @@
 
               <div class="carousel__item carousel-item">
                 <img
-                  src="img/homepage/main/carousel/bg-image3.png"
+                  src="img/homepage/main/carousel/bg-image3.webp"
                   class="carousel__bg d-block w-100"
                   alt="slide 1"
                 />
@@ -311,7 +314,7 @@
             <video
               id="video"
               class="video-js vjs-default-skin"
-              poster="img/homepage/main/video/video-thumbnail.png"
+              poster="img/homepage/main/video/video-thumbnail.webp"
               controls
               width="1230"
               height="500"
@@ -617,7 +620,7 @@
                 <div class="clients-reviews__swiper-wrapper swiper-wrapper">
                   <div class="clients-reviews__swiper-slide swiper-slide">
                     <img
-                      src="img/homepage/main/clients/profile-image.png"
+                      src="img/homepage/main/clients/profile-image.webp"
                       alt="profile-image"
                       class="clients-reviews__profile-icon"
                     />
@@ -638,7 +641,7 @@
 
                   <div class="clients-reviews__swiper-slide swiper-slide">
                     <img
-                      src="img/homepage/main/clients/profilepic2.jpg"
+                      src="img/homepage/main/clients/profilepic2.webp"
                       alt="profile-image"
                       class="clients-reviews__profile-icon"
                     />
@@ -659,7 +662,7 @@
 
                   <div class="clients-reviews__swiper-slide swiper-slide">
                     <img
-                      src="img/homepage/main/clients/profilepic3.jpg"
+                      src="img/homepage/main/clients/profilepic3.webp"
                       alt="profile-image"
                       class="clients-reviews__profile-icon"
                     />
@@ -700,7 +703,7 @@
             <div class="clients-reviews__image-wrap">
               <img
                 class="clients-reviews__image"
-                src="img/homepage/main/clients/image.jpg"
+                src="img/homepage/main/clients/image.webp"
                 alt="partner image"
                 srcset=""
               />
@@ -742,77 +745,90 @@
 
           <div class="news__cards-wrap">
             <div class="news__left">
-              <div class="news-card news-card--big">
-                <img
-                  class="news-card__img"
-                  src="img/homepage/main/news/article/news-main.jpg"
-                  width="705px"
-                  height="360px"
-                  alt="news photo"
-                  srcset=""
-                />
+              <a href="#" class="news__left-link">
+                <div class="news-card news-card--big">
+                  <img
+                    class="news-card__img"
+                    src="img/homepage/main/news/article/news-main.webp"
+                    width="705px"
+                    height="360px"
+                    alt="news photo"
+                    srcset=""
+                  />
 
-                <div class="news-card__content">
-                  <h4 class="news-card__title title-4">
-                    How to Build Climate Change-Resilient Infrastructure
-                  </h4>
-                  <div class="news-card__info">
-                    <p class="news-card__category description">Industry News</p>
-                    <p class="news-card__date description">June 24, 2020</p>
-                    <p class="news-card__comments description">4 comments</p>
+                  <div class="news-card__content">
+                    <h4 class="news-card__title title-4">
+                      How to Build Climate Change-Resilient Infrastructure
+                    </h4>
+                    <div class="news-card__info">
+                      <p class="news-card__category description">
+                        Industry News
+                      </p>
+                      <p class="news-card__date description">June 24, 2020</p>
+                      <p class="news-card__comments description">4 comments</p>
+                    </div>
+                    <p class="news-card__description description">
+                      Ipsum aliquet nisi, hendrerit rhoncus quam tortor,
+                      maecenas faucibus. Tincidunt aliquet sit vel, venenatis
+                      nulla. Integer bibendum turpis convallis enim, nibh
+                      convallis...
+                    </p>
                   </div>
-                  <p class="news-card__description description">
-                    Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas
-                    faucibus. Tincidunt aliquet sit vel, venenatis nulla.
-                    Integer bibendum turpis convallis enim, nibh convallis...
-                  </p>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="news__right">
-              <div class="news-card news-card--sm">
-                <img
-                  class="news-card__img"
-                  src="img/homepage/main/news/article/news-2.jpg"
-                  width="495px"
-                  height="255px"
-                  alt="news photo"
-                  srcset=""
-                />
+              <a href="#" class="news__right-link">
+                <div class="news-card news-card--sm">
+                  <img
+                    class="news-card__img"
+                    src="img/homepage/main/news/article/news-2.webp"
+                    width="495px"
+                    height="255px"
+                    alt="news photo"
+                    srcset=""
+                  />
 
-                <div class="news-card__content">
-                  <h4 class="news-card__title title-4">
-                    How Construction Can Help Itself
-                  </h4>
-                  <div class="news-card__info">
-                    <p class="news-card__category description">Innovation</p>
-                    <p class="news-card__date description">June 12, 2020</p>
-                    <p class="news-card__comments description">No comments</p>
+                  <div class="news-card__content">
+                    <h4 class="news-card__title title-4">
+                      How Construction Can Help Itself
+                    </h4>
+                    <div class="news-card__info">
+                      <p class="news-card__category description">Innovation</p>
+                      <p class="news-card__date description">June 12, 2020</p>
+                      <p class="news-card__comments description">No comments</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="news-card news-card--sm">
-                <img
-                  class="news-card__img"
-                  src="img/homepage/main/news/article/news-3.jpg"
-                  width="495px"
-                  height="255px"
-                  alt="news photo"
-                  srcset=""
-                />
+              </a>
+              <a href="#" class="news__right-link">
+                <div class="news-card news-card--sm">
+                  <img
+                    class="news-card__img"
+                    src="img/homepage/main/news/article/news-3.webp"
+                    width="495px"
+                    height="255px"
+                    alt="news photo"
+                    srcset=""
+                  />
 
-                <div class="news-card__content">
-                  <h4 class="news-card__title title-4">
-                    Types of Flooring Materials
-                  </h4>
-                  <div class="news-card__info">
-                    <p class="news-card__category description">Company News</p>
-                    <p class="news-card__date description">December 1, 2019</p>
-                    <p class="news-card__comments description">No comments</p>
+                  <div class="news-card__content">
+                    <h4 class="news-card__title title-4">
+                      Types of Flooring Materials
+                    </h4>
+                    <div class="news-card__info">
+                      <p class="news-card__category description">
+                        Company News
+                      </p>
+                      <p class="news-card__date description">
+                        December 1, 2019
+                      </p>
+                      <p class="news-card__comments description">No comments</p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
@@ -1047,7 +1063,6 @@
       </div>
     </footer>
 
-    <script src="node_modules/swiper/swiper-bundle.js"></script>
     <script src="node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="./libs/phoneMask/mask.js"></script>
     <script src="./libs/phoneMask/mask_list.js"></script>

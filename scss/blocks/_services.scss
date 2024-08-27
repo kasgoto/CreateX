@@ -2,32 +2,36 @@
   position: relative;
   align-items: center;
   text-align: center;
-  overflow: hidden;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
   @include mediaTablet {
     position: relative;
     padding-top: 80px;
-    margin-bottom: 60px;
+    padding-bottom: 40px;
   }
 
   &::before {
     content: "";
+    overflow-x: hidden;
     position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
-    max-height: 850px;
+    height: calc(100% + 120px);
     background-color: $gray200;
-    background-image: url("../img/homepage/main/our-services/bg-image.png");
-    z-index: -10;
+    background-image: url("../img/homepage/main/our-services/bg-image.webp");
+    z-index: -1;
     transform: translate(0, -197px);
     @include mediaTablet {
-      transform: translate(0, 0);
-      background-image: url("../img/homepage/main/our-services/bg-image.png");
-      top: 0;
-      height: 100%;
-      width: 100%;
-      background-size: cover;
+      transform: translate(0, -170px);
     }
+    // @include mediaTablet {
+    //   transform: translate(0, 0);
+    //   background-image: url("../img/homepage/main/our-services/bg-image.png");
+    //   top: 0;
+    //   height: 100%;
+    //   width: 100%;
+    //   background-size: cover;
+    // }
   }
 
   &__title {
@@ -103,18 +107,18 @@
       background-size: contain;
     }
     &--1::after {
-      background: url("../img/homepage/main/our-services/hover/construction.jpg")
+      background: url("../img/homepage/main/our-services/hover/construction.webp")
         center center;
     }
     &--2::after {
-      background: url("../img/homepage/main/our-services/hover/project.jpg");
+      background: url("../img/homepage/main/our-services/hover/project.webp");
     }
     &--3::after {
-      background: url("../img/homepage/main/our-services/hover/interior.jpg");
+      background: url("../img/homepage/main/our-services/hover/interior.webp");
       background-position: center;
     }
     &--4::after {
-      background: url("../img/homepage/main/our-services/hover/repairs.jpg");
+      background: url("../img/homepage/main/our-services/hover/repairs.webp");
       background-position: 70%;
     }
     &:hover::after {

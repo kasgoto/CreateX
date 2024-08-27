@@ -9,17 +9,17 @@ const swiper = new Swiper(".portfolio__cards-wrap", {
   },
   breakpoints: {
     // when window width is >= 320px
-    200: {
+    250: {
       slidesPerView: 1,
       spaceBetween: 15,
     },
     // when window width is >= 480px
-    500: {
+    420: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
     // when window width is >= 640px
-    960: {
+    829: {
       slidesPerView: 3,
       spaceBetween: 30,
     },
@@ -64,3 +64,14 @@ phoneInputs.forEach((input) => {
     if (input.value == "+") input.value = ""
   })
 })
+
+// Add smooth mouse scroll
+const scrollBtn = document.querySelector(".footer__go-top-btn")
+const benefitsSection = document.getElementById("header__nav")
+scrollBtn.onclick = function () {
+  benefitsSection.scrollIntoView({
+    behavior: "smooth",
+    block: "center",
+    inline: "nearest",
+  })
+}

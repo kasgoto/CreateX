@@ -4,7 +4,7 @@
   grid-template-columns: repeat(6, 1fr);
   gap: 100px;
 
-  @include mediaTablet {
+  @media screen and (max-width: 950px) {
     gap: 40px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
